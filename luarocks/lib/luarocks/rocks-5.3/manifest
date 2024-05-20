@@ -1,0 +1,339 @@
+commands = {
+   ["cgilua.cgi"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.fcgi"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["wsapi.cgi"] = {
+      "wsapi/1.7-1"
+   }
+}
+dependencies = {
+   cgilua = {
+      ["6.0.2-0"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 2, string = "5.2"
+                  }
+               }
+            },
+            name = "lua"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 6, 0, string = "1.6.0"
+                  }
+               }
+            },
+            name = "luafilesystem"
+         }
+      }
+   },
+   coxpcall = {
+      ["1.17.0-1"] = {}
+   },
+   dado = {
+      ["2.2.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   htk = {
+      ["3.5-1"] = {}
+   },
+   luafilesystem = {
+      ["1.8.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   rings = {
+      ["1.3.0-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     5, 1, string = "5.1"
+                  }
+               }
+            },
+            name = "lua"
+         }
+      }
+   },
+   wsapi = {
+      ["1.7-1"] = {
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 6, 2, string = "1.6.2"
+                  }
+               }
+            },
+            name = "luafilesystem"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 3, 0, string = "1.3.0"
+                  }
+               }
+            },
+            name = "rings"
+         },
+         {
+            constraints = {
+               {
+                  op = ">=",
+                  version = {
+                     1, 14, string = "1.14"
+                  }
+               }
+            },
+            name = "coxpcall"
+         }
+      }
+   }
+}
+modules = {
+   ["cgilua.authentication"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.cookies"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.dispatcher"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.loader"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.lp"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.main"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.mime"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.post"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.readuntil"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.serialize"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.session"] = {
+      "cgilua/6.0.2-0"
+   },
+   ["cgilua.urlcode"] = {
+      "cgilua/6.0.2-0"
+   },
+   coxpcall = {
+      "coxpcall/1.17.0-1"
+   },
+   dado = {
+      "dado/2.2.0-1"
+   },
+   ["dado.object"] = {
+      "dado/2.2.0-1"
+   },
+   ["dado.sql"] = {
+      "dado/2.2.0-1"
+   },
+   htk = {
+      "htk/3.5-1"
+   },
+   lfs = {
+      "luafilesystem/1.8.0-1"
+   },
+   rings = {
+      "rings/1.3.0-1"
+   },
+   stable = {
+      "rings/1.3.0-1"
+   },
+   ["table.extra"] = {
+      "dado/2.2.0-1"
+   },
+   wsapi = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.cgi"] = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.common"] = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.mock"] = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.request"] = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.response"] = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.ringer"] = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.sapi"] = {
+      "wsapi/1.7-1"
+   },
+   ["wsapi.util"] = {
+      "wsapi/1.7-1"
+   }
+}
+repository = {
+   cgilua = {
+      ["6.0.2-0"] = {
+         {
+            arch = "installed",
+            commands = {
+               ["cgilua.cgi"] = "cgilua.cgi",
+               ["cgilua.fcgi"] = "cgilua.fcgi"
+            },
+            dependencies = {
+               luafilesystem = "1.8.0-1"
+            },
+            modules = {
+               ["cgilua.authentication"] = "cgilua/authentication.lua",
+               ["cgilua.cookies"] = "cgilua/cookies.lua",
+               ["cgilua.dispatcher"] = "cgilua/dispatcher.lua",
+               ["cgilua.loader"] = "cgilua/loader.lua",
+               ["cgilua.lp"] = "cgilua/lp.lua",
+               ["cgilua.main"] = "cgilua/main.lua",
+               ["cgilua.mime"] = "cgilua/mime.lua",
+               ["cgilua.post"] = "cgilua/post.lua",
+               ["cgilua.readuntil"] = "cgilua/readuntil.lua",
+               ["cgilua.serialize"] = "cgilua/serialize.lua",
+               ["cgilua.session"] = "cgilua/session.lua",
+               ["cgilua.urlcode"] = "cgilua/urlcode.lua"
+            }
+         }
+      }
+   },
+   coxpcall = {
+      ["1.17.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               coxpcall = "coxpcall.lua"
+            }
+         }
+      }
+   },
+   dado = {
+      ["2.2.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               dado = "dado.lua",
+               ["dado.object"] = "dado/object.lua",
+               ["dado.sql"] = "dado/sql.lua",
+               ["table.extra"] = "table/extra.lua"
+            }
+         }
+      }
+   },
+   htk = {
+      ["3.5-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               htk = "htk.lua"
+            }
+         }
+      }
+   },
+   luafilesystem = {
+      ["1.8.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               lfs = "lfs.so"
+            }
+         }
+      }
+   },
+   rings = {
+      ["1.3.0-1"] = {
+         {
+            arch = "installed",
+            commands = {},
+            dependencies = {},
+            modules = {
+               rings = "rings.so",
+               stable = "stable.lua"
+            }
+         }
+      }
+   },
+   wsapi = {
+      ["1.7-1"] = {
+         {
+            arch = "installed",
+            commands = {
+               ["wsapi.cgi"] = "wsapi.cgi"
+            },
+            dependencies = {
+               coxpcall = "1.17.0-1",
+               luafilesystem = "1.8.0-1",
+               rings = "1.3.0-1"
+            },
+            modules = {
+               wsapi = "wsapi.lua",
+               ["wsapi.cgi"] = "wsapi/cgi.lua",
+               ["wsapi.common"] = "wsapi/common.lua",
+               ["wsapi.mock"] = "wsapi/mock.lua",
+               ["wsapi.request"] = "wsapi/request.lua",
+               ["wsapi.response"] = "wsapi/response.lua",
+               ["wsapi.ringer"] = "wsapi/ringer.lua",
+               ["wsapi.sapi"] = "wsapi/sapi.lua",
+               ["wsapi.util"] = "wsapi/util.lua"
+            }
+         }
+      }
+   }
+}

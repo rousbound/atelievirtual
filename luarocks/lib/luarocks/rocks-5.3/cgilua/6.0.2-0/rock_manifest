@@ -1,0 +1,90 @@
+rock_manifest = {
+   bin = {
+      ["cgilua.cgi"] = "1ee49ca769c581792100d7b2490e9ed3",
+      ["cgilua.fcgi"] = "16260ac4f36e80e77963ef4006b3ec91"
+   },
+   ["cgilua-6.0.2-0.rockspec"] = "741220bad6ec0c3c90168e7bcbe9c3b4",
+   doc = {
+      br = {
+         ["cgi-128.gif"] = "492430ee016eef78267e876ac59cbaf8",
+         ["index.html"] = "6727ac2d93cf4c2253ff26ef575fd6ed",
+         ["libraries.html"] = "d6d0d06a249711b5f1a9af8560057c43",
+         ["license.html"] = "33227a53c10f95273304a4f3ae654d5f",
+         ["manual.html"] = "8cea41b3df3375af846d398591f7bd82",
+         ["reference.html"] = "271fbeb3a42078d0f90576b8bd7e31ee",
+         ["sapi.html"] = "27fee45eba8c330d27b4f468a4dfe272"
+      },
+      us = {
+         ["cgi-128.gif"] = "492430ee016eef78267e876ac59cbaf8",
+         ["doc.css"] = "9f3436e564a50c354c551e699d2cff00",
+         ["index.html"] = "111629e1250519cdc19a3b83c4f11057",
+         ["libraries.html"] = "bbcf2e1264e385492aa2c461a66478b0",
+         ["license.html"] = "320ef2813063bdac622f625b22916d3a",
+         ["manual.html"] = "b09e8efecad613e937e9536ddbed2bd7",
+         ["reference.html"] = "0e5b73aa6f81e0ebd6f0cb86d44377cb",
+         ["sapi.html"] = "61fff59bd3073fdf26c9289208792e4c"
+      }
+   },
+   examples = {
+      ["app.lua"] = "e71167d3f69bc9a478625c448b966aa9",
+      ["authentication_conf.lua"] = "6e32690849f02e215e5f13b90b379a30",
+      cgilua = {
+         ["config.lua"] = "0c4e56da2d18e900a94a57de003cb14f"
+      },
+      ["check.lua"] = "1cabc7cebc146ac361fa38b954f31617",
+      css = {
+         ["doc.css"] = "667de0f03e32a1b92faacffc424db377"
+      },
+      img = {
+         ["keplerproject.gif"] = "f2e7bcf58ff91206f11f8aea001ede14",
+         ["test.jpg"] = "ba8b6a32b86b5098623673d74671b2f0"
+      },
+      ["index.lp"] = "d791a81ed805873ac36d3be991d3a6cc",
+      jquery = {
+         ["jquery-1.2.3.min.js"] = "8e1505e40506c7e0529eec7d98af9c8f"
+      },
+      ["login.lp"] = "34aebe56f86ef0451741c5a12c09101b",
+      ["test.lp"] = "b9af951b062d48a083bce4a20506e74b"
+   },
+   lua = {
+      cgilua = {
+         ["authentication.lua"] = "56e0dce5fca1a4b42d2c61d5cb272d4e",
+         ["cookies.lua"] = "d15f3a000030eb7cb8720e1131bd5206",
+         ["dispatcher.lua"] = "95048217f60bd1b09680c27f0ca74472",
+         ["loader.lua"] = "b20ebacba632f36f61e8cf80bc3983c4",
+         ["lp.lua"] = "89e95fa6482e6c89dbe61607aa3296ff",
+         ["main.lua"] = "ebd43cb6402d0d3163010a8d705657ec",
+         ["mime.lua"] = "d41fecf6a3d88a6a22432c3307515b20",
+         ["post.lua"] = "57911d969f995454b858baadc3d09945",
+         ["readuntil.lua"] = "c5d8d793146c5d6a98d91626f6f5d185",
+         ["serialize.lua"] = "474f581ff17d5b789dd51f16f00f6ae2",
+         ["session.lua"] = "13fb42cd9e70ce1cd6e6e76cc3b4d563",
+         ["urlcode.lua"] = "95e29cbc442055771cdb2eac2b73f2b9"
+      }
+   },
+   tests = {
+      Makefile = "73eb9e08ba8f49a8a740eb3ed5b7d347",
+      ["download.lua"] = "12f131e651afb21f9f0655198638272c",
+      ["env.lua"] = "71679ebe860dfabbf1d10ac938a17385",
+      ["overview.lp"] = "c43e782bde8385eb42322a2afd508c8c",
+      ["prepara_sql2.lua"] = "a9f242f1dadfd980450596464538a761",
+      ["tcgi1.lua"] = "bf3c8e127cd26e784fde1176d4d0a361",
+      ["test.html"] = "0e7098898e8730aaf00003e1346d0774",
+      ["test_conc.lua"] = "7179425f9f3519cf4be89e3be3300157",
+      ["test_cookies.lp"] = "ca78806967d4dc10685b924d3f110ade",
+      ["test_cookies.lua"] = "cd61f422bb721d732e38fd1d98dae6ce",
+      ["test_err.lua"] = "afa9a43da61a6ebc6aeda2b04a578765",
+      ["test_fs.lua"] = "16d96cce1e82139f24e3c9d666d46d55",
+      ["test_htk.lua"] = "9d0bf8544d67bc745f4bf7d13dd9190e",
+      ["test_lib.lua"] = "6e3825b82a06aa141869b0af0575e911",
+      ["test_main.html"] = "b29dda31302a6e65679b8451a8954856",
+      ["test_main.lp"] = "3a1b552ead0958513256ada871d3f2f1",
+      ["test_main.lua"] = "148c1252ea3b0767cfad868a231b704a",
+      ["test_session.lua"] = "0c57ff8f7ec7708287ecfbd9bfe55428",
+      ["test_sql.lua"] = "439b2a10a5368a96454c6d2476dd8282",
+      ["test_sql2.lua"] = "fa7e361068ed88dfff7fd72b4174d8a6",
+      ["test_variables.lp"] = "e8a3a5299dba6858089ccef5274e95b3",
+      ["tfcgi1.lua"] = "1feed502cb539593995ce36d640cbd2d",
+      ["tmod1.lua"] = "bf8f9244d498795c1559cdd2bc3a2bee"
+   }
+}

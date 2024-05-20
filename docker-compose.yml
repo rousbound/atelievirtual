@@ -1,0 +1,20 @@
+  version: '3.9'
+
+  services:
+    application:
+      image: "cgilua:latest"
+      tty: true
+      container_name: "atelievirtual"
+      hostname: "atelievirtual"
+      volumes:
+        - "/home/geraldo/Dropbox/Código/Projects/atelievirtual/src:/home/app/src"
+        - "/home/geraldo/Dropbox/Código/Projects/atelievirtual/logs:/home/app/logs"
+        - "/home/geraldo/Dropbox/Código/Projects/atelievirtual/backup:/home/app/backup"
+        - "/home/geraldo/Dropbox/Código/Projects/atelievirtual/luarocks:/home/app/.luarocks"
+      ports: 
+        - "8888:80"
+        - "2222:22"
+    db:
+      image: "postgres-cgilua:14"
+      restart: always
+      container_name: "atelievirtual-db"

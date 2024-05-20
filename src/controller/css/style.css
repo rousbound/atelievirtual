@@ -1,0 +1,51 @@
+    @font-face {
+        font-family: "Computer Modern";
+        src: url('fonts/cmunrm.ttf') format('truetype');
+    }
+    body {
+        font-family: "Computer Modern";
+        margin: 20px;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+    }
+    h1, h2 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        margin: 10px 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+    /* Styling links */
+    a {
+        //text-decoration: none; /* Removes the underline from links */
+        color: #333; /* Sets the default link color to a dark grey, instead of blue */
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for color and background */
+    }
+    /* Hover effect */
+    a:hover {
+        background: linear-gradient(to right, #000, #555); /* Gradient effect from black to grey */
+        -webkit-background-clip: text;
+        color: transparent; /* Makes the text color transparent to show the gradient */
+    }
+    /* Responsive design adjustments */
+    @media (max-width: 768px) {
+        body {
+            margin: 10px;
+        }
+    }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* This removes extra space below the image */
+    margin: 0 auto; /* This centers the image horizontally */
+  }
+  h2 {
+    margin-bottom: -5px;
+  }

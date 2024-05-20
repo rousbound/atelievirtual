@@ -12,7 +12,7 @@
         - "/home/geraldo/Dropbox/Código/Projects/atelievirtual/backup:/home/app/backup"
         - "/home/geraldo/Dropbox/Código/Projects/atelievirtual/luarocks:/home/app/.luarocks"
       ports: 
-        - "8888:80"
+        - "80:80"
         - "2222:22"
     # db:
     #   image: "postgres-cgilua:14"

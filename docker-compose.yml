@@ -2,7 +2,7 @@
 
   services:
     application:
-      image: "cgilua:latest"
+      image: "rousbound/cgilua:latest"
       tty: true
       container_name: "atelievirtual"
       hostname: "atelievirtual"
